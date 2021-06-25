@@ -1,0 +1,191 @@
+
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+*/
+
+html {
+    font-family: sans-serif;
+}
+
+/*
+1. Vị trí
+2. Kích thước ( width, height)
+3. Màu sắc
+4. Kiểu dáng ( kiểu chữ , hình tròn, vuông....)
+ */
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;   /* postion bị chìm thì z-index làm cho nổi lên tăng từ 0-1 */
+}
+
+/* begin: nav */
+
+#nav {
+    display:inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    color: #000;
+    line-height: 38px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+/* end: nav */
+
+
+/* begin: header */
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* end: header */
+
+
+/* begin: slider */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+}
+
+#slider .text-discription {
+    margin-top: 25px;
+    
+}
+/* end:slider */
+
+
+/* begin:content */
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section .section-heading {
+    text-align: center;
+    /* margin-top: 64px; */
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .content-section .section-sub-heading {
+    text-align: center;
+    /* margin: 25px 0; */
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-section .about-text {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+#footer {
+
+}
